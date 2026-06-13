@@ -11,11 +11,12 @@ print(f"Time started: {str(datetime.now())}")
 print("-" * 50)
 
 try:
-    # FIXED: Added range(1, 101) to scan ports 1 through 100
-    for port in range(1, 101):  
+    # Scan standard networking and server ports (1 to 1024)
+    for port in range(1, 1025):  
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.settimeout(0.5) # Fast response timing
+        s.settimeout(0.3) # 300 milliseconds timeout for fast scanning
         
+        # connect_ex returns 0 if the connection was successful (port is open)
         result = s.connect_ex((target, port))
         if result == 0:
             print(f"Port {port}: OPEN")
@@ -25,6 +26,10 @@ except KeyboardInterrupt:
     print("\nExiting script.")
     sys.exit()
 
+except socket.gaierror:
+    print("\nHostname could not be resolved.")
+    sys.exit()
+
 except socket.error:
-    print("\nCould not connect to server.")
+    print("\nCould not connect to the server.")
     sys.exit()
