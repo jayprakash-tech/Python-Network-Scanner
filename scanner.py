@@ -2,8 +2,8 @@ import socket
 import sys
 from datetime import datetime
 
-# Define the target (127.0.0.1 scans your own computer safely)
-target = "127.0.0.1" 
+# Define the target (scanme.nmap.org scans your own computer safely)
+target = "scanme.nmap.org" 
 
 print("-" * 50)
 print(f"Scanning target: {target}")
@@ -33,3 +33,4 @@ except socket.gaierror:
 except socket.error:
     print("\nCould not connect to the server.")
     sys.exit()
+print("Scanning complete!)
