@@ -33,4 +33,4 @@ except socket.gaierror:
 except socket.error:
     print("\nCould not connect to the server.")
     sys.exit()
-print("Scanning complete!)
+print("Scanning complete!")
