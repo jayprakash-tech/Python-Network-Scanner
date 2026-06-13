@@ -11,8 +11,8 @@ print(f"Time started: {str(datetime.now())}")
 print("-" * 50)
 
 try:
-    # Scan fundamental web and system ports
-    for port in:  
+    # FIXED: Added range(1, 101) to scan ports 1 through 100
+    for port in range(1, 101):  
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         s.settimeout(0.5) # Fast response timing
         
