@@ -21,8 +21,7 @@ The script creates a TCP socket for each port in the chosen range and uses `conn
 This project was tested in a local-lab environment using `127.0.0.1`.
 
 ## Sample Output
-!([scanner-output-localhost.png](https://github.com/jayprakash-tech/Python-Network-Scanner/blob/main/scanner-output-localhost.PNG))
-
+![Scanner Output](scanner-output-localhost.PNG)
 ## Ethical Use
 This project is for educational purposes and authorized testing only. It should not be used on public or third-party systems without permission.
 
