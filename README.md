@@ -18,7 +18,10 @@ The script creates a TCP socket for each port in the chosen range and uses `conn
 - A non-zero result usually means the port is closed or filtered.
 
 ## Example Use
-This project is intended for local-lab testing, such as scanning `127.0.0.1` or systems where I have permission to test.
+This project was tested in a local-lab environment using `127.0.0.1`.
+
+## Sample Output
+![Scanner Output](scanner-output-localhost.jpg)
 
 ## Ethical Use
 This project is for educational purposes and authorized testing only. It should not be used on public or third-party systems without permission.
@@ -45,5 +48,5 @@ This project is for educational purposes and authorized testing only. It should 
 - Exporting scan results
 
 ## Author
-Jay Prakash
-GitHub: jayprakash-tech
+Jay Prakash  
+GitHub: [jayprakash-tech](https://github.com/jayprakash-tech)
